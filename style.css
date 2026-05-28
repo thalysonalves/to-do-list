@@ -21,6 +21,7 @@ main {
 .content {
   height: 80vh;
   width: 30%;
+  max-width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,7 +60,6 @@ h1 {
 #new-task:focus {
   background-color: #5b617c;
   scale: 1.03;
-  border: 2px solid #161731;
 }
 
 .btn-add {
@@ -67,14 +67,46 @@ h1 {
   width: 3rem;
   border: none;
   border-radius: 8px;
-  background-color: #5b617c;
+  background-color: #ffffff;
   color: #161731;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #161731;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
 }
 
 .btn-add:active {
   scale: 1.1;
+}
+
+input::placeholder {
+  font-size: large;
+}
+
+@media screen and (max-width: 1440px) {
+  
+  .content {
+    min-width: 60vw;
+  }
+
+}
+
+@media screen and (max-width: 645px) {
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #new-task {
+    max-width: 15rem;
+  }
+
+}
+
+@media screen and (max-width: 530px) {
+  
+  .content {
+    min-width: 90vw;
+  }
+
 }
