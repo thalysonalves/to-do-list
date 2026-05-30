@@ -75,12 +75,55 @@ h1 {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
 }
 
-.btn-add:active {
+button:active {
   scale: 1.1;
 }
 
 input::placeholder {
   font-size: large;
+}
+
+.new-tasks-field {
+  width: 70%;
+  height: 70%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #161731;
+}
+
+.new-tasks-group {
+  display: flex;
+  margin: 1rem 0 1rem 0;
+  gap: 8px;
+}
+
+#task {
+  width: 18rem;
+  max-width: 18rem;
+  height: 3rem;
+  font-size: 1rem;
+  background-color: #161731;
+  color: #fff;
+  border-radius: 15px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+
+#btn-remove {
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #161731;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 1440px) {

@@ -27,5 +27,13 @@ function newUserTask() {
   const userTasks = document.createElement('li');
   newTaskGroup.appendChild(userTasks);
   userTasks.textContent = newTask.value;
+  userTasks.id = "task";
   
+  const btnRemove = document.createElement('button');
+  newTaskGroup.appendChild(btnRemove);
+  btnRemove.id = "btn-remove";
+  const btnRemoveStyle = document.createElement('span');
+  btnRemove.appendChild(btnRemoveStyle);
+  btnRemoveStyle.className = "material-symbols-outlined"
+  btnRemoveStyle.textContent = "delete"
 }
